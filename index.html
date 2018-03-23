@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="referrer" content="never">
+	<title>ChouJiang</title>
+
+	<style type="text/css">
+
+*{padding:0;margin:0}
+
+body{
+
+	text-align: center;
+
+	background-color: #1664ad;
+
+}
+
+.ly-plate{
+
+	position:relative;
+
+	width:509px;
+
+	height:509px;
+
+	margin: 50px auto;
+
+}
+
+.rotate-bg{
+
+	width: 509px;
+
+	height: 509px;
+
+	background: url(./images/ly-plate.png);
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	margin-top: 0%;
+
+}
+
+.ly-plate div.lottery-star{
+
+	width:214px;
+
+	height:214px;
+
+	position:absolute;
+
+	top:150px;
+
+	left:147px;
+
+	/*text-indent:-999em;
+
+	overflow:hidden;
+
+	background:url(rotate-static.png);
+
+	-webkit-transform:rotate(0deg);*/
+
+	outline:none
+
+}
+
+.ly-plate div.lottery-star #lotteryBtn{
+
+	cursor: pointer;
+
+	position: absolute;
+
+	top:0;
+
+	left:0;
+
+	*left:-107px
+
+}
+
+</style>
+	<!-- <link rel="stylesheet" href="./public/main.css"> -->
+	<!-- import angularjs -->
+	<script src="./bower_components/angular/angular.min.js"></script>
+
+	<script src="./scripts/controller.js"></script>
+
+	<script src="./scripts/app.js"></script>
+
+	<script type="text/javascript" src="./scripts/js/rotate.js"></script>
+	
+</head>
+<body ng-app="MyApp">
+
+	<!-- <div class="choujiang">
+		<div class="jihui">
+			<p>you have<span id="num">     </span>chances</p>
+
+			<div class="jihuir">
+				<a href="#"><p>share for another <span> 1 </span>chance</p></a>
+			</div>
+		</div>
+
+		<div class="choujiang2">
+			 <img class="timg" src="./images/timg.jpg"> -->
+			<!-- <a id="plateBtn" href="javascript:" title=""></a>
+			<div class="lijichou"></div>
+			<div id="lijichou"><img class="point" src="./images/point.jpg"></div>
+		</div> -->
+
+		<!-- show result -->
+		<!-- <div class="result">
+			<a href="#"><p></p></a>
+		</div>
+
+		<div id="result">
+			<p id="resulttext"></p>
+			<a id="resultBtn" href="javascript:" title="close"></a>
+		</div> -->
+
+
+		<!-- <div class="turntable">
+			<div class="pointer" id="btn" ng-controller="PointerController"></div>
+			<div class="rotate" id="rotate">
+				<div class="prize prize_1"><strong>prize</strong> <span>1</span></div>
+				<div class="prize prize_2"><strong>prize</strong> <span>2</span></div>
+				<div class="prize prize_3"><strong>prize</strong> <span>3</span></div>
+				<div class="prize prize_4"><strong>prize</strong> <span>4</span></div>
+				<div class="prize prize_5"><strong>prize</strong> <span>5</span></div>
+				<div class="prize prize_6"><strong>prize</strong> <span>6</span></div>
+				<div class="prize prize_7"><strong>prize</strong> <span>7</span></div>
+				<div class="prize prize_8"><strong>prize</strong> <span>8</span></div>
+
+			</div>
+		</div> -->
+
+			
+<div class="ly-plate">
+
+  <div class="rotate-bg"></div>
+
+	<div class="lottery-star"><img src="./images/rotate-static.png" id="lotteryBtn"></div>
+
+</div>
+
+<script type="text/javascript" src="./scripts/js/jquery.min.js"></script>
+
+<script type="text/javascript" src="./scripts/js/jQueryRotate.2.2.js"></script>
+
+<script type="text/javascript" src="./scripts/js/jquery.easing.min.js"></script>
+
+<script type="text/javascript" src="./scripts/js/rotate.js"></script>
+
+
+	
+
+</body>
+</html>
